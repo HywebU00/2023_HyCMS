@@ -1,0 +1,349 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script language=JavaScript>
+var number=2; //定義數目
+function LMYC() {
+var lbmc;
+    for (i=2;i<=number;i++) {
+        lbmc = eval('LM' + i);
+        lbmc.style.display = 'none';
+    }
+}
+ 
+function ShowFLT(i) {
+    lbmc = eval('LM' + i);
+    if (lbmc.style.display == 'none') {
+        LMYC();
+        lbmc.style.display = '';
+    }
+    else {
+        lbmc.style.display = 'none';
+    }
+}
+</script>
+
+</head>
+<body class="layout">
+<div class="content">
+<h2><a href="#">目錄樹管理</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>目錄樹編修</span></h2>
+
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="treenodeMain.htm"><img src="images/icon_treeEdit.gif" alt="編修目錄樹架構">編修目錄樹架構</a></li>
+   <li><a href="treeList.htm"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb"> 
+<form action="" method="get">
+<div class="tab">
+<ul>
+    <li><a href="TreeEdit.htm">基本資料管理</a></li>
+	<li><a href="treeEdit-GC.htm">政府資訊分類管理</a></li>
+	<li class="here"><a href="treeEdit-RSS.htm">RSS Feed管理</a></li>
+</ul>
+</div>
+<table summary="資料表格">
+    <caption>
+      </caption>
+    <tr>
+      <th scope="row">頻道 Channel 設定</th>
+      <td><label>
+        <input type="checkbox" name="checkbox" id="checkbox" checked="checked" value="check"> 
+        目錄樹預設值向下沿用(包括節點與資料)
+      </label>
+        <div class="optional"><!--FF瀏覽器 展開下層效果出不來,需要工程師再調整一下 -->
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">設定<strong>RSS Channe</strong>l 選填欄位</a>
+        </div>
+        </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>標題 Title</th>
+      <td>
+      <label>
+        <input name="textfield" type="text" id="textfield" class="text" value="輸入網站標題(手動輸入)">
+      </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>網址 link</th>
+      <td>
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="http://www.taiwan.gov.tw">
+      </label>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>描述 description</th>
+      <td>
+      <label>
+      <textarea name="textarea" id="textarea" cols="45" rows="5">輸入網站簡介等描述</textarea>
+      </label></td>
+    </tr>
+  </table>
+
+<div id=LM1 style="display:none;">
+<table>
+	<tr>
+<Th>類別 category</Th>
+<td>
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+
+<!--select name="" id="displayfilter1">
+<option value="">請選擇</option>
+<option value="" selected="selected">資料類型</option>
+<option value="">資訊分類</option>
+<option value="">手動輸入</option>
+</select>
+<select name="" id="displayfilter1">
+<option value="">請選擇</option>
+<option value="" selected="selected">文字 Text</option>
+<option value="">影像 Image</option>
+<option value="">音檔 Sound</option>
+</select-->
+
+</td>
+</tr>
+<tr>
+<Th>版權 copyright</Th>
+<td><input class="text" value="&copy; 2012 Copyright by Hyweb Technology Co. Inc."/>&nbsp;
+</td>
+</tr>
+<tr>
+<Th>RSS 網址 docs</Th>
+<td><input class="text"/></td>
+</tr>
+<tr>
+<Th>創建者 generator</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+<tr>
+<Th>圖片 image</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+<tr>
+<Th>語言 language</Th>
+<td>
+<select name="" id="displayfilter">
+<option value="">請選擇</option>
+<option value="" selected="selected">中文</option>
+<option value="">英文</option>
+<option value="">日文</option>
+</select>&nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>最後更新日期 lastBuildDate</Th>
+<td><input name="" class="text" value="預設帶入網站最後有資料編修存檔日期" readonly/>&nbsp;
+</td>
+	</tr>
+
+<tr>
+<Th>管理者 managingEditor</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>發布日期 pubDate</Th>
+<td>
+<input name="" class="text" value="預設帶入網站上線發佈日期" readonly/>
+</td>
+								</tr>
+
+<tr>
+<Th>網站管理者 webMaster</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>cloud</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>rating</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>skipDays</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>skipHours</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+
+<tr>
+<Th>textInput</Th>
+<td><input class="text"/>  &nbsp;
+</td>
+</tr>
+</table>
+</div>
+
+<table summary="資料表格">
+    <caption></caption>
+    <tr>
+      <th scope="row">項目 item設定</th>
+      <td><label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+      目錄樹預設值向下沿用(包括節點與資料)
+      </label>
+      <div class="optional">
+        <a onClick=javascript:ShowFLT(2) href="javascript:void(null)" target="_self">設定<strong>RSS item </strong>選填欄位</a>
+        </div>  
+        </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>標題 Title</th>
+      <td>
+      <a href="#">
+      <label>
+      <input name="textfield" type="text" id="textfield" class="text" value="預設帶入資料標題">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>網址 link</th>
+      <td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="預設帶入資料頁面網址">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><span class="must">*</span>描述 description</th>
+      <td>
+      <a href="#">
+      <label>
+        <textarea name="textarea" id="textarea" cols="45" rows="5">預設帶入內文欄位前100字</textarea>
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+      </td>
+    </tr>
+  </table>
+
+<div id=LM2 style="display:none;">
+<table>
+<tr>
+<Th>作者 author</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="預設帶入資料建置帳號姓名">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>類別 category</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>comments</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>enclosure</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>識別ID guid</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>發布日期 pubDate</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="預設帶入資料發布日期欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+<tr>
+<Th>來源 sources</Th>
+<td>
+      <a href="#">
+      <label>
+        <input name="textfield2" type="text" id="textfield2" class="text" value="請設定預設帶入欄位">
+      </label>
+      <img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></a>
+</td>
+</tr>
+
+</table>
+</div>
+
+
+<div class="aCenter">
+<div class="remark"><span class="must">*</span>星號標示項目為必填欄位</div>
+<input name="submit1" type="button" class="btn_submit" onClick="location='treeList.htm'"  value="編修存檔" />
+<input name="submit2" type="button" class="btn_reset"  value="取    消" />
+</div>
+
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+<body><!--treenode htm需將class="layout"拿掉 -->
+<div class="content">
+<h2><a href="#">目錄樹管理</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">目錄樹名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">子目錄名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>節點編修</span></h2>
+
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="treenodeNew.htm"><img src="images/icon_treeEdit.gif" alt="編修目錄樹架構">新增下層節點</a></li>
+   <li><a href="#"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>	
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb"> 
+<form action="" method="get">
+<div class="tab">
+<ul>
+    <li class="here"><a href="treenodeEdit.htm">基本資料管理</a></li>
+	<li><a href="treenodeEdit-table.htm">欄位進階設定</a></li>
+	<li><a href="#">政府資訊分類管理</a></li>
+    <li><a href="#">RSS欄位設定管理</a></li>
+</ul>
+</div>      
+<Table>
+
+<tr>
+<th><span class="must">*</span>名稱</th>
+<td><input name="htx_stitle" class="text" value="目錄節點名稱"/></td>
+</tr>
+
+<tr>
+<Th>資料集</Th>
+<Td>
+<input name="datasetunit" class="text" value="主題單元-資料集名稱"/>
+<a href="#"><img src="images/icon_searchDB.gif" alt="選擇主題單元" onClick="MM_openBrWindow('treenodeNew-selectdataset.htm','','location=yes,width=650,height=600')" /></a>
+<a href="#"><img src="images/icon_addDB.gif" alt="新增主題單元" /></a>
+</Td>
+</tr>
+
+	<tr>
+<Th><span class="must">*</span>是否公開</Th>
+<Td>
+<select name="Select7">
+<option>公開</option>
+<option>(公開)不顯示</option>
+<option>草稿</option>
+<option>關閉</option>
+</select>
+</Td>
+	</tr>
+	<tr>
+<Th>自動上下線設定</Th>
+<Td>
+<input name="" size="25" value="2011/06/17 23:59"/> <img src="images/icon_calendar.gif" />
+ ~ 
+<input name="" size="25" value="2011/06/18 23:59"/> <img src="images/icon_calendar.gif" />
+</Td>
+	</tr>
+
+<tr>
+<Th>單元類型</Th>
+<Td>
+<select name="Select1">
+<option>請選擇</option>
+<option>網頁模組(單頁模式)</option>
+<option selected="selected">訊息模組(多筆條列)</option>
+<option>URL模組(網址連結)</option>
+</select>
+<!-- 依單元資料類型出現次選擇版型項目 -->
+<div>
+條列版型
+<select name="Select1">
+<option>請選擇條列版型</option>
+<option selected="selected">預設</option>
+<option>欄位條列</option>
+<option>圖片條列</option>
+</select>
+</div>
+
+<!-- 選擇網頁模組時只出現內容版型選項 -->
+<div>
+內容版型
+<select name="Select1">
+<option>請選擇條列版型</option>
+<option selected="selected">預設</option>
+<option>欄位內容</option>
+<option>圖片內容</option>
+</select>
+</div>
+
+<!-- 當選擇URL模組時出現URL連結設定 -->
+<!--單元連結網址
+<input name="Text1" type="text" class="text"-->
+</Td>
+</tr>
+
+<tr>
+<Th>排序條件</Th>
+<Td>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option>單位</option>
+</select>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">升冪</option>
+<option>降冪</option>
+</select>
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+</div>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option selected="selected">重要性</option>
+<option>單位</option>
+</select>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">升冪</option>
+<option>降冪</option>
+</select>
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option selected="selected">單位</option>
+</select>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">升冪</option>
+<option>降冪</option>
+</select>
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+
+<div>增加排序條件<img src="images/icon_modAdd.gif" alt="增加限制條件" /></div>
+</Td>
+</tr>
+
+<tr>
+<Th>分類欄位</Th>
+<Td>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option>單位</option>
+</select>&nbsp;
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+</div>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option selected="selected">資料大類 topCat</option>
+<option>單位</option>
+</select>&nbsp;
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+<div>
+<select name="Select1">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option selected="selected">單位 dept </option>
+</select>
+<img src="images/icon_remove.gif" alt="移除排序條件" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+
+<div>增加分類欄位<img src="images/icon_modAdd.gif" alt="增加限制條件" /></div>
+</Td>
+</tr>
+
+	<tr>
+<Th>限制條件</Th>
+<Td>
+
+<div>
+<select name="Select2">
+<option>請選擇</option>
+<option selected="selected">資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option>單位</option>
+<option>手動輸入</option>
+</select>
+<!--依選擇的限制出現第二層選擇-->
+<select name="Select3">
+<option>請選擇</option>
+<option selected="selected">資料大類之一</option>
+<option>資料大類之二</option>
+<option>資料大類之三</option>
+</select>
+<img src="images/icon_remove.gif" alt="移除限制條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+</div>
+
+<div>
+<select name="Select4">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option selected="selected">分眾 vGroup</option>
+<option>單位</option>
+</select>
+<!--依選擇的限制出現第二層選擇-->
+<select name="Select5">
+<option>請選擇</option>
+<option selected="selected">分眾之一</option>
+<option>分眾之二</option>
+<option>分眾之三</option>
+</select>
+<img src="images/icon_remove.gif" alt="移除限制條件" />
+<img src="images/arrow_down.gif" alt="下移" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+<div>
+<select name="Select6">
+<option>請選擇</option>
+<option>資料大類 topCat</option>
+<option>分眾 vGroup</option>
+<option>單位</option>
+<option selected="selected">手動輸入</option>
+</select>
+<!--依選擇的限制出現第二層選擇-->
+<input name="Text2" type="text" class="text">
+<img src="images/icon_remove.gif" alt="移除限制條件" />
+<img src="images/arrow_up.gif" alt="上移" />
+</div>
+
+
+<div>增加限制條件<img src="images/icon_modAdd.gif" alt="增加限制條件" /></div>
+</Td>
+	</tr>
+
+<tr>
+<Th>標題圖示</Th>
+<Td><input name="Text1" type="file"></Td>
+</tr>
+
+<tr>
+<Th>顯示次序</Th>
+<Td><input name="Text1" type="text" class="text"></Td>
+</tr>
+
+<tr>
+<Th>另開視窗</Th>
+<Td>
+<select name="Select1">
+<option>請選擇</option>
+<option selected="selected">另開視窗</option>
+<option>不另開視窗</option>
+</select>
+</Td>
+</tr>
+
+<tr>
+<Th>進階資訊欄位</Th>
+<td>
+                <div>是否啟用政府資訊分類欄位填寫功能? 
+<select name="Select2">
+<option>啟用</option>
+<option>不啟用</option>
+</select>
+</div>
+<div>
+政府資訊分類是否必填?
+<select name="Select1">
+<option>必填</option>
+<option>非必填</option>
+</select>
+</div>
+<div>
+本單元是否提供RSS Feeds訂閱功能?
+<select name="Select2">
+<option>啟用</option>
+<option>不啟用</option>
+</select>
+</div>
+<div class="must"><span class="must">*</span>選擇啟用後，資料建置時方會出現「政府資訊分類管理填寫欄位」頁籤；選擇為必填，則必須填寫政府資訊分類後方可儲存。</div>
+
+                </td>
+</tr>
+
+</Table>           
+
+<div class="aCenter">
+<div class="remark"><span class="must">*</span>必填欄位</div>
+<input name="submit1" type="button" class="btn_submit" onClick="location='treenodeMain.htm'"  value="編修存檔" />
+<input name="submit2" type="button" class="btn_reset"  value="取    消" />
+      </div>
+</form>     
+</div>
+
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

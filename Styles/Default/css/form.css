@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+/*---formTb---*/
+.formTb { margin: 10px 10px 10px 10px; padding: 0px; text-align: center; border-bottom: 0px; clear: both; }
+.formTb table { width:100%; margin:10px 0 10px 0; text-align:left; background-color:#FFF; border-collapse:collapse; border: 2px solid #99ccc2; }
+.formTb table caption{ padding:0px; color: #888; text-align:left; }
+.formTb table th{ color: #004646; width:20%; font-weight: normal; padding:4px; vertical-align:middle; text-align:right;	border-right: 1px solid #99ccc2; border-bottom: 1px solid #99ccc2; border-left: 1px solid #99ccc2; background: url(../images/formTb_thbg.gif) repeat right 0px; }
+.formTb table td img{ vertical-align:middle;}
+.formTb table td{ line-height: 1.8em; color:#555; padding:4px; vertical-align:middle; border-bottom: 1px dotted #99ccc2; }
+.formTb table td ul{ margin:5px 0 0 0px; }
+.formTb table td ul li{ padding:0 0 0 15px; background-image: url(../images/arrow2.gif); background-repeat: no-repeat; background-position: 0px 6px; list-style-type:none; line-height:2.2em; }
+.formTb table td ol{ margin:5px 0 0 10px; list-style-type:none; }
+.formTb table td ol li{ margin:5px 0 0 25px; list-style-type: decimal; }
+.formTb table td .GClist li{ padding:0 0 0 12px; background: url(../images/arrow1.gif) no-repeat 5px center; }
+.formTb table td .GClist li img{ vertical-align:middle;}
+/*---table reset---*/
+/* .formTb table td table, .formTb table td table th, .formTb table td table td{ border:0; color:#333; width:auto; text-align:left; background: #FFF url(none); } */
+/*---formTb2---*/
+.formTb2 { margin: 30px 0 30px 0; padding: 0px; text-align: center; border-bottom: 0px; clear: both; }
+.formTb2 table { width: 100%; margin: 30px auto; text-align: left; border-collapse: collapse; }
+.formTb2 table caption { padding: 0px; color: #888; text-align: left; }
+.formTb2 table th { color: #006170; width: 15%; font-weight: normal; padding: 4px; vertical-align: middle; text-align: right; border-bottom: 1px dotted #99ccc2; line-height: 40px; }
+.formTb2 table td img { vertical-align: middle; }
+.formTb2 table td { line-height: 1.8em; color: #555; padding: 5px; vertical-align: middle; border-bottom: 1px dotted #99ccc2; }
+.formTb2 table tr:hover { text-decoration: none; background: #edfeff; }
+    /*---modeSwitch---*/
+.formTb2 table .modeSwitch { display:inline-block;}
+.formTb2 table .modeSwitch ul { margin:0;}
+.formTb2 table .modeSwitch ul li { display:inline; float:left; margin:0 2px 0 0; padding:0px 8px 0 0; background: url(../images/modeSwitch_libg1.gif) no-repeat right 0px; }
+.formTb2 table .modeSwitch ul li a { display:inline; float:left; color:#333; text-decoration:none; padding:5px 0 5px 8px; background: url(../images/modeSwitch_libg1.gif) no-repeat left 0px; }
+.formTb2 table .modeSwitch ul li.here{background: url(../images/modeSwitch_libg2.gif) no-repeat right 0px;}
+.formTb2 table .modeSwitch ul li.here a{background: url(../images/modeSwitch_libg2.gif) no-repeat left 0px; color:#FFF;}
+.formTb2 table .modeSwitch ul li a:hover{ color:#C00;}
+/*---uploadlist/ uploadlist---*/
+.AddPic1 { float: left; display: inline; margin-left: 5px; line-height: 40px; vertical-align: bottom; }
+.AddPic, .AddVideo{ float:left; display:inline; margin-left: 5px;}
+.AddPic .selectUpload, .AddVideo .selectUpload{ padding:0px 0 0 0; width:380px; height:125px; margin:0px 0 0;	overflow:hidden; background: url(../images/selectUpload_bg.gif) no-repeat 0px 0px; }
+.AddPic .selectUpload ul, .AddVideo .selectUpload ul{ margin:15px 0 0 10px;  }
+.AddPic .selectUpload li, .AddVideo .selectUpload li{ display:inline; float:left; width:160px; padding:5px 12px 5px 5px; }
+.AddPic .selectUpload li h3 ,.AddVideo .selectUpload li h3{ background-color:#fff;  clear:both; border:1px solid #83c9d1; margin:5px 0;}
+.AddPic .selectUpload li h3 a ,.AddVideo .selectUpload li h3 a{  color: #333 ;font-weight:bold;  text-decoration:none; padding:3px 3px 2px 3px; font-size:1.05em; display:block;}
+.AddPic .selectUpload li p,.AddVideo .selectUpload li p{ color:#84735d; line-height:1.3em; font-size:0.85em; max-height:60px; _height:60px; overflow: hidden; }
+.formTb2 table .uploadlist { margin: 5px 15px 5px 0; border: 1px dotted #ccc; float: left; display: inline; width: 240px; height: 170px; padding: 5px; background-color: #f3f3f3; text-align: center; }
+.formTb2 table .uploadlist .head { margin:0 0 0 5px; }
+.formTb2 table .uploadlist .head h3 { color:#333; font-weight:bold;font-size: 0.8em; height:50px;vertical-align:top;}
+.formTb2 table .uploadlist .body{ margin:0 0 0 5px;}
+.formTb2 table .uploadlist .body h3{ color:#333; font-weight:bold;font-size: 0.8em; line-height:1.8em;}
+.formTb2 table .uploadlist .body p{ color:#333; font-weight:bold;font-size: 0.8em; line-height:1.8em;}
+.formTb2 table .uploadlist .img{ float:left;}
+.formTb2 table .uploadlist .img img{ width:150px; height:100px; border:1px solid #ccc; padding:1px; margin:5px;}
+.formTb2 table td h4{ font-weight:bold; color:#000;}
+.formTb2 table .uploading, .formTb2 table .uploadfile, .formTb2 table .uploadlist .setmain{ display: block; clear:both; height: 45px;}
+.formTb2 table .uploading span, .formTb2 table .uploadfile span{ display:inline;    font-family: monospace; font-size: 1.0em;line-height: 32px;}
+.formTb2 table td .unstatus{ clear:both; color:#C00; }
+.formTb2 table .uploading .title, .formTb2 table .uploadfile .title{ color: #006170; margin:0 0 5px; border-bottom:1px dotted #CCC;}
+/*---optional---*/
+.optional{ display: block; float:right; margin:0px 0 0; padding:0px 5px 0 30px; background: url(../images/icon_optional.gif) no-repeat 0px center; }
+.listTb .optional { float: none; }
+.optional a strong { font-weight: bold; color: #006e6a; }
+/*---popWin---*/
+.popWin { width:640px; margin:0 auto; }
+/*---popWin formTb---*/
+.popWin .popformTb { margin:10px 10px 10px 20px; padding:20px 0px 0 0px; text-align:center; border-bottom: 0px; clear:both;	background: url(../images/popformTb_bg1.gif) no-repeat 0px top; }
+.popWin .popformTb .foot{background: url(../images/popformTb_bg2.gif) no-repeat 0px bottom; height:20px;}
+.popWin .popformTb .setbox { margin:0 30px 0 10px; overflow:hidden; clear:both; }
+.popWin .popformTb .setbox p{ color:#003f41; margin:0 0 0 5px;}
+.popWin .popformTb .setbox p em{ font-style:italic;}
+.popWin .popformTb .setbox table { width:540px;}
+.popWin .popformTb .setbox table caption{ color:#999;}
+.popWin .popformTb .setbox table th{ text-align:right;}
+.popWin .popformTb .setbox table td{ padding:2px 0;}
+.popWin .popformTb .listfunction{ clear:both; margin:5px 20px; border-bottom:2px dotted #83c9d1; overflow:hidden; padding:2px 0;  }
+.popWin .popformTb .listfunction .funSearch{ margin:0 0 5px;}
+.popWin .close{ float:right; margin:-55px 10px 0; }
+.popWin .popformTb .tab{ text-align:center;}
+.popWin .popformTb .tab ul{ margin:10px auto; text-align:center;}
+.popWin .popformTb .tab li{ display:inline; margin:0 2px 0; }
+.popWin .popformTb .tab li a{ display:inline-block; padding:5px; color: #006e6a; border:1px solid #01b4ae; }
+.popWin .popformTb .tab li.here a{ background-color:#01b4ae; color:#FFF; border:1px solid #006e6a;}
+.popWin .popformTb table { margin:0 auto 5px 20px; width: auto; text-align:left; background-color:#FFF; border-collapse:collapse; }
+.popWin .popformTb table ul { margin: 0 10px; }
+/*---uploadsearchlist---*/
+.popWin .popformTb .uploadsearchlist{ margin:5px 0; overflow:hidden;   }
+.popWin .popformTb .uploadsearchlist ul{ clear:both;  text-align:center; margin:5px 0 0 40px;}
+.popWin .popformTb .uploadsearchlist li{ float:left; display:inline; width:150px; min-height:150px;	_height:150px;	overflow:auto; padding:5px; margin:0 10px 10px 0; background-color:#efefef; border:1px dotted #ccc;	}
+.popWin .popformTb .uploadsearchlist li label{ float:left; vertical-align: top; padding:2px 2px 0;  }
+.popWin .popformTb .uploadsearchlist li .title{ color:#333; font-weight:bold; max-height:50px; _height:50px; overflow:hidden; line-height:1.3em; }
+.popWin .popformTb .uploadsearchlist li .img { display:block; text-align:center; margin:5px 0; }
+.popWin .popformTb .uploadsearchlist li .img img{ width:120px; height:80px; border:1px solid #ccc; padding:1px;}
+.popWin .popformTb .uploadsearchlist li a:hover{ text-decoration:underline;}
+.popWin .popformTb .uploadsearchlist li p, .popWin .popformTb .uploadsearchlist li p a{ line-height:1.3em; }
+/*---popTb---*/
+.popWin .popformTb .popTb{ margin:10px 0; }
+.popWin .popformTb .popTb th{ border-bottom:2px solid #008599; background-color:#f0e9de; padding:3px; }
+.popWin .popformTb .popTb td{ border-bottom:1px dotted #ccc; padding:3px;}
+.formTb2 .aCenter, .formTb2 .aCenter .aCenter{ margin:10px 0; clear:both; }
+/*---popWin---*/
+.popWin2 { /*width:900px;*/ margin: 0 auto; }
+/*---popWin formTb---*/
+.popWin2 .popformTb2{ margin:10px 10px 10px 10px; padding:20px 0px 0 0px; text-align:center; border-bottom: 0px; clear:both; background: url(../images/popformTb_bg1_1000.gif) repeat 0px top; }
+.popWin2 .popformTb2 .foot{ background: url(../images/popformTb_bg2_1000.gif) repeat 0px bottom; height:20px; }
+.popWin2 .popformTb2 .setbox{ margin:0 20px 0 20px; overflow:hidden; clear:both; }
+.popWin2 .popformTb2 .setbox p{ color:#008599; margin:0 0 0 0;}
+.popWin2 .popformTb2 .setbox p em{ font-style:italic;}
+.popWin2 .popformTb2 .setbox table { width:100%;}
+.popWin2 .popformTb2 .setbox table caption{ color:#999;}
+.popWin2 .popformTb2 .setbox table th{ text-align:center;}
+.popWin2 .popformTb2 .setbox table td{ padding:2px 0;}
+.popWin2 .popformTb2 .listfunction{ clear:both; margin:5px 20px; border-bottom:2px dotted #cbf8ff; overflow:hidden; padding:2px 0;  }
+.popWin2 .popformTb2 .listfunction .funSearch{ margin:0 0 5px;}
+.popWin2 .popformTb2 .tab{ text-align:center;}
+.popWin2 .popformTb2 .tab ul{ margin:10px auto; text-align:center;}
+.popWin2 .popformTb2 .tab li{ display:inline; margin:0 2px 0; }
+.popWin2 .popformTb2 .tab li a{ display:inline-block; padding:5px; color: #008599; border:1px solid #cbf8ff; }
+.popWin2 .popformTb2 .tab li.here a{ background-color:#008599; color:#FFF; border:1px solid #006170;}
+.popWin2 .popformTb2 table{ margin:0 0 0 0; width: auto; text-align:left; background-color:#FFF; border-collapse:collapse; }
+.popWin2 .popformTb2 table ul{ margin: 0 10px;}
+/*---uploadsearchlist---*/
+.popWin2 .popformTb2 .uploadsearchlist{ margin:5px 0; overflow:hidden;   }
+.popWin2 .popformTb2 .uploadsearchlist ul{ clear:both;  text-align:center; margin:5px 0 0 40px;}
+.popWin2 .popformTb2 .uploadsearchlist li{ float:left; display:inline; width:150px; min-height:150px; _height:150px; overflow:auto; padding:5px; margin:0 10px 10px 0;background-color:#efefef; border:1px dotted #ccc;	}
+.popWin2 .popformTb2 .uploadsearchlist li label{ float:left; vertical-align: top; padding:2px 2px 0;  }
+.popWin2 .popformTb2 .uploadsearchlist li .title{ color:#333; font-weight:bold; max-height:50px; _height:50px; overflow:hidden; line-height:1.3em; }
+.popWin2 .popformTb2 .uploadsearchlist li .img { display:block; text-align:center; margin:5px 0; }
+.popWin2 .popformTb2 .uploadsearchlist li .img img{ width:120px; height:80px; border:1px solid #ccc; padding:1px;}
+.popWin2 .popformTb2 .uploadsearchlist li a:hover{ text-decoration:underline;}
+.popWin2 .popformTb2 .uploadsearchlist li p, .popWin .popformTb .uploadsearchlist li p a{ line-height:1.3em; }
+/*---popTb---*/
+.popWin2 .popformTb2 .popTb{ margin:10px 0; }
+.popWin2 .popformTb2 .popTb th{ border-bottom:2px solid #008599; background-color:#f0e9de; padding:3px; }
+.popWin2 .popformTb2 .popTb td{ border-bottom:1px dotted #ccc; padding:3px;}

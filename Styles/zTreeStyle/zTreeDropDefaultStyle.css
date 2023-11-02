@@ -1,0 +1,43 @@
+﻿/*.ztree li a.level0 {
+width: 100px;
+height: 20px;
+text-align: center;
+display: block;
+}*/
+
+ul.ztree {
+    margin-top: 10px;
+    border: 1px solid #617775;
+    background: #f0f6e4;
+    width:220px;
+    height:360px;
+    overflow-y:scroll;
+    overflow-x:auto;
+}
+
+/*.ztree li span.button.switch.level0 {
+display: none;
+}
+.ztree li a.level0 span.button {
+float: right;
+margin-left: 10px;
+visibility: visible;
+display: none;
+}
+
+.ztree li a.level0 span {
+display: block;
+color: black;
+padding-top: 3px;
+font-size: 12px;
+font-weight: bold;
+word-spacing: 2px;
+}
+
+.ztree li a.level0 {
+height: 20px;
+text-align: center;
+display: block;
+}*/
+.ztree li span.button.center_close {background-position: -74px -5px !important}
+.ztree li span.button.bottom_close{background-position:-74px -5px !important}

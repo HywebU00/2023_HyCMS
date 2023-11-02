@@ -1,0 +1,35 @@
+﻿@charset "utf-8";
+/*----------------------------------------------------------------css reset start*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	/*font: normal 1em/1.65em, arial;*/
+	font-family: "Microsoft JhengHei","微軟正黑體",arial,sans-serif;
+	text-align: left;
+	vertical-align: baseline;
+	scrollbar-face-color: #999;
+	scrollbar-highlight-color: #eee;
+	scrollbar-shadow-color: #eee;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-arrow-color: #777;
+	scrollbar-track-color: #eaeadd;
+	scrollbar-darkshadow-color: #eee
+}
+
+/* remember to define focus styles! */
+
+ol, ul, li, dt, dd{
+	list-style:none;
+}
+select {
+
+}
+
+/*----------------------------------------------------------------css reset end*/

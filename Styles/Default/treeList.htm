@@ -1,0 +1,277 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="layout">
+<div class="content">
+<h2>目錄樹管理<img src="images/path_arrow.gif" alt="&gt;&gt;"><span>目錄樹清單</span></h2>
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="treeSearch.htm"><img src="images/icon_treeSearch.gif" alt="目錄樹查詢">目錄樹查詢</a></li>
+   <li><a href="treeNew.htm"><img src="images/icon_treeAdd.gif" alt="新增目錄樹">新增目錄樹</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!-- navfunction -->
+<div class="listfunction">
+
+<p>關鍵字：入口；單位：；建立於：2012/6/1~2012/6/20 (查詢與篩選條件顯示放這裡)</p>
+
+<div class="sortBy">
+<input name="button" type="button" class="btnBatch" value="批次管理" />
+<div class="blockModify">
+<ul>
+<li><a href="#">整批刪除</a></li>
+</ul>
+</div>
+
+<label for="display">排序依</label>
+<select name="" id="Display">
+<option value="" selected="selected">建立時間(新→舊)</option>
+<option value="">目錄樹名稱(A→Z)</option>
+</select>
+
+<!--label for="displayfilter">快速篩選</label>
+<select name="" id="displayfilter">
+<option value="">全部</option>
+<option value="" selected="selected">狀態</option>
+<option value="">單位</option>
+</select>
+<select name="" id="displayfilter">
+<option value="">請選擇</option>
+<option value="" selected="selected">公開</option>
+<option value="">不公開</option>
+</select-->
+
+</div>
+
+<div class="page">
+	<ul>
+		<li class="first"><a href="#"><img src="images/space.gif" alt="first" title="Previous" /></a></li>
+        <li class="prev"><a href="#"><img src="images/space.gif" alt="previous" title="Previous" /></a></li>
+		<li class="here">1</li>
+		<li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+		<li class="next"><a href="#"><img src="images/space.gif" alt="next" title="next" /></a></li>
+        <li class="last"><a href="#"><img src="images/space.gif" alt="last" title="last" /></a></li>
+	</ul>
+</div>
+</div>
+
+<!-- 列表 -->
+<div class="listTb">
+<Table summary="資料表格">
+
+<tr>
+	<th><input name="Checkbox1" type="checkbox" alt="全選"></th>
+	<th>目錄樹名稱</th>
+	<th width="35%">用途</th>
+	<th width="15%">單位</th>
+	<th width="12%" class="aCenter">建立日期</th>
+	<th width="8%" class="aCenter">管理</th>
+</tr>                  
+
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="treeEdit.htm">入口網網站目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>前台預設入口網主目錄樹前台預設入口網主目錄樹</td>
+	<td>目錄樹所屬單位組織</td>
+	<td class="date">2011/06/13</td>
+	<td class="aCenter">
+	<a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a>
+	<a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a>
+	</td>
+</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="treeEdit.htm">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/13</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>分眾目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/13</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>電子報目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/13</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/12</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/12</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/11</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/10</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/07</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/07</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/07</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/06</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/06</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/06</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+<tr>
+	<td><input name="Checkbox1" type="checkbox"></td>
+	<td>
+	<a href="#">目錄樹名稱目錄樹名稱</a>
+	</td>
+	<td>子網站目錄樹</td>
+	<td>單位組織名稱</td>
+	<td class="date">2011/06/06</td>
+	<td class="aCenter"><a href="treeEdit.htm"><img src="images/icon_treeEdit2.gif"  alt="編修設定"></a> <a href="treenodeMain.htm"><img src="images/icon_treenodeMain.gif" width="22" height="17" alt="管理目錄架構"></a></td>
+	</tr>
+                  
+</TABLE>
+</div>
+
+<div class="listfunction">
+<div class="sortBy">
+<input name="button" type="button" class="btnBatch" value="批次管理" />
+<!--div class="blockModify">
+<ul>
+<li><a href="#">整批刪除</a></li>
+</ul>
+</div-->
+
+</div>
+
+<div class="page">
+	<ul>
+		<li class="first"><a href="#"><img src="images/space.gif" alt="first" title="Previous" /></a></li>
+        <li class="prev"><a href="#"><img src="images/space.gif" alt="previous" title="Previous" /></a></li>
+		<li class="here">1</li>
+		<li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+		<li class="next"><a href="#"><img src="images/space.gif" alt="next" title="next" /></a></li>
+        <li class="last"><a href="#"><img src="images/space.gif" alt="last" title="last" /></a></li>
+	</ul>
+</div>
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+</body>
+</html>

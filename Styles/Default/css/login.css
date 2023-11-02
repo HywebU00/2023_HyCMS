@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+@import url("reset.css");
+
+body{ text-align:center; background: #fff url(../images/login_bg.gif) repeat-x 0px top; font-size: 0.8em; }
+.login{ margin:80px auto 0px auto; width:955px; min-height:500px; _height:500px; position:relative; background: url(../images/login_mainbg.jpg) no-repeat center center; }
+.login .logo{position:absolute; top:100px; left:120px;}
+.login .logo img{ width: 320px; height: auto;}
+.login .loginForm{ width:280px; position:absolute; top:100px; left:500px; line-height:3em; text-align:left; }
+.login .loginForm form{ text-align:left;}
+.login .loginForm label{ padding:0 0 0 15px; vertical-align:middle; line-height:2em; background: url(../images/buttle.gif) no-repeat 0px 5px; font-size: 1.0em; }
+.login .loginForm input{ display: inline; width:170px; height: 25px; color:#666; border:0; vertical-align:middle; padding:5px 0 0 10px; background: url(../images/login_inputbg.gif) no-repeat 0px 0px; }
+/*----------------relateLink*/
+.login .relateLink { position:absolute; top:300px; left:550px;}
+.login .relateLink ul{ margin: 5px auto; }
+.login .relateLink li{ display:inline; float:left; padding:0 7px 0;  margin:0 1px 0; background: url(../images/relateLink_libg.gif) no-repeat right 4px; }
+.login .relateLink li a{ color:#005c5c; text-decoration:none; font-size:0.9em; }
+.login .relateLink li a:hover{ color:#930;}
+/*-----------------verification*/
+.login .loginForm .verification{ margin:0; padding:0;}
+.login .loginForm .verification input{ display:inline; margin: 2px 0 0 95px;}
+.login .loginForm .verification img{ width:120px; height:24px;vertical-align:middle; border:1px solid #ddd;  margin:0; padding:0;}
+.login .copyright{	margin:0 auto; color:#666; position:absolute; bottom:40px; left:100px; }
+.login_btn{ margin:5px 0 0 90px;}
+/*---------------common button*/
+.login .loginForm input.btn_submit{ background: url(../images/btn_submit.gif) repeat-x 0 0;	border:0; color:#fff; margin: 0 0 0 5px; width:88px; height:30px; cursor:pointer; font-weight:bold; }
+.login .loginForm input.btn_reset { background: url(../images/btn_reset.gif) repeat-x 0 0; border:0; color:#fff; margin: 0; width:88px; height:30px; cursor:pointer; font-weight:bold; }
+.copyright{	margin:0 auto; color:#666; text-align:center; font-size: 1.1em;}
+

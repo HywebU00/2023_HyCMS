@@ -1,0 +1,368 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+<body class="layout">
+<div class="content">
+<h2><a href="#">資料上搞</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>新增資料</span></h2>
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="#"><img src="images/icon_crossSearch.gif" alt="跨單元資料查詢">跨單元資料查詢</a></li>
+   <li><a href="#"><img src="images/icon_quickAdd.gif" alt="快速新增資料">快速新增資料</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+
+<!--form-->
+<div class="formTb2">
+<div class="step">
+  <ul>
+  <li class="step1"><span>Step1.</span><p>選擇上稿單元與資料式選擇上稿單元與資料式</p></li>
+  <li class="step2here"><span>Step2.</span><p>依欄位輸入與編輯資料</p></li>
+  <li class="step3"><span>Step3.</span><p>編修儲存(發佈或草稿)</p></li>
+  </ul>
+</div>
+<form action="" method="get">
+<Table>
+<tr>
+<th><span class="must">*</span>上稿單元選擇</th>
+<td>
+<div>
+台北駐大阪經濟文化辦事處(中文) &gt;&gt; 最新消息
+<input name="button" type="button" class="btn" value="加入我的常用單元" />
+</div>
+
+</td>
+</tr>
+
+<tr>
+<th><span class="must">*</span>資料式選擇</th>
+<td>
+<ul class="mode_s">
+<li class="here"><input name="Radio1" type="image" src="images/mode-s02.gif" /><span>一般上稿式</span></li>
+<li><input name="Radio1" type="image" src="images/mode-s01.gif" /><span>URL連結式</span></li>
+<li><input name="Radio1" type="image" src="images/mode-s01.gif" /><span>檔案下載式</span></li>
+</ul>
+</td>
+</tr>
+
+<!--欄位依據單元欄位進階設定之顯示呈現-->
+<tr>
+<Th><span class="must">*</span>標題</Th>
+<Td><input name="htx_stitle" class="text"/></Td>
+</tr>
+
+<tr>
+<Th>內文</Th>
+<TD>
+<script language="JavaScript" type="text/javascript">
+
+	function goCollapse() {
+		var leftExpand_td = document.getElementById('leftExpand_td');			
+		leftExpand_td.style.display = 'none';
+		
+		var leftCollapse_td = document.getElementById('leftCollapse_td');			
+		leftCollapse_td.style.display = '';
+
+	}
+	
+	function goExpand() {
+		var leftExpand_td = document.getElementById('leftExpand_td');			
+		leftExpand_td.style.display = '';
+		
+		var leftCollapse_td = document.getElementById('leftCollapse_td');			
+		leftCollapse_td.style.display = 'none';	
+	}		
+	
+    </script>
+<div class="modeSwitch">
+<ul>
+<li class="here"><a href="#">純文字編輯模式</a></li>
+<li><a href="quick-addData-step02-htmlmode.htm" target="_self">網頁編輯模式</a></li>
+</ul>
+</div>
+<textarea name="htx_xbody" rows="8" title="內容、本文、網頁、說明" style="width:100%">
+純文字編輯模式禁止html code的編輯，自動依使用者編輯時換行加入換行標籤
+從html編輯模式切回純文字編輯模式，要清掉html code
+所見即所得，預覽編輯成果
+本案整體架構如上圖所示，在系統建置規劃上，本團隊採用Web-based多層式(N-tier)的開發架構，可隨著單位規模及IT技術升級發展，作多種擴充延伸設計，將大幅減少硬體資源耗用成本，提高系統負載效能。這樣的程式架構在每一層可以根據本案各項需求進行調整與設計，系統無須重新設計開發。
+</textarea>
+<p class="must">*資料內文預設使用純文字編輯器，若需要自行編排，請切換為網頁編輯模式。</p>
+</TD>
+</tr>
+
+<tr>
+<Th><span class="must">*</span>是否公開</Th>
+<Td>
+<select name="Select1">
+<option>公開</option>
+<option>不公開</option>
+</select>
+</Td>
+</tr>
+<tr>
+<Th><span class="must">*</span>張貼日</Th>
+<Td><input name="" class="text" value="2011/06/17"/></Td>
+</tr>
+
+<tr>
+<Th>上傳圖片</Th>
+<Td>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100_processing.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+<select name="Select1">
+<option>公開</option>
+<option>不公開</option>
+</select></p>
+  </div>
+  
+<div class="setmain">
+<input name="Radio1" type="radio" checked="checked" value="1" />
+設為資料主圖
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div></div>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+  <select name="Select2">
+    <option>公開</option>
+    <option>不公開</option>
+  </select>
+</p>
+  </div>
+  
+<div class="setmain">
+<input name="Radio1" type="radio" checked="checked" value="1" />
+設為資料主圖
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div>
+</div>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+  <select name="Select2">
+    <option>公開</option>
+    <option>不公開</option>
+  </select>
+</p>
+  </div>
+  
+<div class="setmain">
+<input name="Radio1" type="radio" checked="checked" value="1" />
+設為資料主圖
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div>
+</div>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+  <select name="Select2">
+    <option>公開</option>
+    <option>不公開</option>
+  </select>
+</p>
+  </div>
+  
+<div class="setmain">
+<input name="Radio1" type="radio" checked="checked" value="1" />
+設為資料主圖
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div>
+</div>
+
+<div class="AddPic">
+<a name="AddPic"></a>
+<input name="button" type="button" class="btn_addpic" value="新增圖片" onClick="location='quick-addData-step02-upload01.htm#AddPic'" />
+<div class="selectUpload">
+  <ul>
+     <li><h3><a href="#" onClick="MM_openBrWindow('quick-addData-step02-upload02.htm','','location=yes,width=650,height=600')">從電腦中選擇圖片上傳<img src="images/icon_searchPC.gif" alt="從系統圖片庫中選擇"></a></h3>
+     <p>自硬碟中新增，所選擇的圖片將自動儲存放圖片庫</p>
+     </li>
+     <li><h3><a href="#" onClick="MM_openBrWindow('quick-addData-step02-upload03.htm','','location=yes,width=650,height=600')">從系統圖片庫中選擇<img src="images/icon_searchPIC.gif" alt="從系統圖片庫中選擇"></a></h3>
+     <p>自圖庫中新增，可自您個人權限可瀏覽的圖片中選擇</p>
+     </li>
+  </ul>
+</div>
+</div>
+</Td>
+</tr>
+
+<tr>
+<Th>上傳影片</Th>
+<Td>
+<h4>處理中影片：</h4>
+<div class="uploading">
+<span class="title">1.Sammys Adventure-The Secret Passage 2010.part1.avi</span>
+<span class="unstatus">狀態：上傳中</span>
+<input type="image" name="submit" src="images/btn_modify.gif" />
+<input type="image" name="submit3" src="images/btn_remove.gif" />
+</div>
+<div class="uploading">
+<span class="title">2.Sammys Adventure-The Secret Passage 2010.part2.avi</span>
+<span class="unstatus">狀態：上傳失敗</span>
+<input type="image" name="submit" src="images/btn_modify.gif" />
+<input type="image" name="submit" src="images/btn_retry.gif" />
+</div>
+
+<h4>已完成上傳之影片清單：</h4>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+<select name="Select1">
+<option>公開</option>
+<option>不公開</option>
+</select></p>
+  </div>
+  
+<div class="unstatus">狀態：完成上傳，同步處理中</div>
+<div class="aLeft">
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div>
+</div>
+
+<div class="uploadlist">
+  <div class="img"><img src="images/pic150x100.jpg" /></div>
+  <div class="body">
+  <h3>影片標題影片標題影片標題</h3>
+<p>排序
+<input name="Text1" type="text" size="5" /></p>
+<p>顯示
+  <select name="Select2">
+    <option>公開</option>
+    <option>不公開</option>
+  </select>
+</p>
+  </div>
+  
+<div class="unstatus">狀態：完成上傳，同步處理中</div>
+<div class="aLeft">
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif">
+</div>
+</div>
+
+<div class="AddVideo" >
+<a name="AddVideo"></a>
+<input name="button" type="button" class="btn_addmovie" value="新增影片" onClick="location='quick-addData-step02-upload04.htm#AddVideo'" />
+<div class="selectUpload">
+  <ul>
+     <li><h3><a href="#" onClick="MM_openBrWindow('quick-addData-step02-upload02.htm','','location=yes,width=650,height=600')">從電腦中選擇影片上傳<img src="images/icon_searchPC.gif" alt="從電腦中選擇影片上傳"></a></h3>
+     <p>自硬碟中新增，所選擇的影片將自動儲存放影片庫</p>
+     </li>
+     <li><h3><a href="#" onClick="MM_openBrWindow('quick-addData-step02-upload05.htm','','location=yes,width=650,height=600')">從系統影片庫中選擇<img src="images/icon_searchMOV.gif" alt="從系統影片庫中選擇"></a></h3>
+     <p>自影片庫中新增，可自您個人權限可瀏影覽的影片中選擇</p>
+     </li>
+  </ul>
+</div>
+
+</div>
+    
+
+</Td>
+</tr>
+
+
+<tr>
+<Th>上傳附檔</Th>
+<Td>
+<div class="uploadfile">
+<span class="title">Sammys Adventure-The Secret Passage 2010 影片簡介.doc</span>
+<span>排序
+<input name="Text1" type="text" size="5" value="1" /></span>
+<span>顯示
+<select name="Select1">
+<option>公開</option>
+<option>不公開</option>
+</select></span>
+</span>
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif" />
+</div>
+<div class="uploadfile">
+<span class="title">Sammys Adventure-The Secret Passage 2010 影片簡介.doc</span>
+<span>排序
+<input name="Text1" type="text" size="5" value="2" /></span>
+<span>顯示
+<select name="Select1">
+<option>公開</option>
+<option>不公開</option>
+</select></span>
+</span>
+<input type="image" name="submit" src="images/btn_modify.gif">
+<input type="image" name="submit" src="images/btn_remove.gif" />
+</div>
+<hr/>
+<div class="AddFile">
+<a name="AddFile"></a>
+<input name="button2" type="button" class="btn" value="新增附檔" />
+</div>
+</Td>
+</tr>
+</Table>
+<div class="aCenter">
+<input name="submit1" type="button" class="btn_submit" onClick="location='quick-addData-step03.htm'" value="編修存檔" />
+                <input name="submit2" type="button" class="btn_reset"  value="取   消" />
+  </div>
+</form>
+
+
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

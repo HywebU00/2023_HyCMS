@@ -1,0 +1,108 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="layout">
+<div class="leftCol2">
+ <h2></h2>
+ <div class="sideBar"><a id="proc"class="hide" href="#" onclick="cols=parent.main.cols;parent.main.cols='12,*';proc.className='hide';roc.className='show'" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('closed','','images/treebar_closed_mo.png',1)"></a><a id="proc2"class="hide" href="#" onclick="cols=parent.main.cols;parent.main.cols='12,*';proc.className='hide';roc.className='show'" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('closed','','images/treebar_closed_mo.png',1)"><img src="images/treebar_closed_mo.png" name="closed" border="0" id="closed" /></a></a><a id="roc" class="show" href="#" onclick="parent.main.cols=cols;roc.className='hide';proc.className='show'" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('opened','','images/treebar_closed_mo.png',1)"><img src="images/treebar_opened.png" name="opened" border="0" id="opened" /></a>
+</div>
+ 
+</div>
+
+<div class="content">
+<h2><a href="#">資料上搞</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>新增資料</span></h2>
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="#"><img src="images/icon_crossSearch.gif" alt="跨單元資料查詢">跨單元資料查詢</a></li>
+   <li><a href="#"><img src="images/icon_quickAdd.gif" alt="快速新增資料">快速新增資料</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb2"> 
+<div class="step">
+  <ul>
+  <li class="step1here"><span>Step1.</span><p>選擇上稿單元與資料式</p></li>
+  <li class="step2"><span>Step2.</span><p>依欄位輸入與編輯資料</p></li>
+  <li class="step3"><span>Step3.</span><p>編修儲存(發佈或草稿)</p></li>
+  </ul>
+</div>
+<form action="" method="get">
+  <table>
+    <tr>
+      <th><span class="must">*</span>上稿單元</th>
+      <td><div>
+        <input name="Radio1" type="radio" checked="checked" value="" />
+        我的常用單元
+         <select name="Select1">
+      <option>請選擇上稿單元</option>
+      <option>台北駐大阪經濟文化辦事處(英文) &gt;&gt; Latest News</option>
+      <option>台北駐大阪經濟文化辦事處(中文) &gt;&gt; 駐館活動</option>
+      <option>台北駐大阪經濟文化辦事處(中文) &gt;&gt; 最新消息</option>
+    </select>
+      </div>
+        <div>
+          <input name="Radio1" type="radio" />
+          選擇其他單元
+          <input name="input" size="45"/>
+          <input name="button" type="button" onClick="quick-addData-step01-selectnode.htm'" class="btn" value="選擇" />
+        </div></td>
+    </tr>
+    <tr>
+      <th><span class="must">*</span>資料式選擇</th>
+      <td>
+      <ul class="mode_L">
+      <li>
+      <input name="Radio1" type="image" src="images/mode_L1_active.jpg" />
+      <div class="data">
+      <h3>一般上稿式</h3>
+      <p>新增站內一般內容頁面資料，點選前台條列資料標題後將連結至內容頁面。</p>
+      </div>
+      </li>
+      <li>
+        <input name="Radio2" type="image" src="images/mode_L2.jpg" />
+         <div class="data">
+      <h3>URL連結式</h3>
+      <p>新增連結至特定URL網址資料，點選前台條列標題後將連結至指定之URL。</p>
+      </div>
+      </li>
+      <li>
+        <input name="Radio3" type="image" src="images/mode_L3.jpg" />
+         <div class="data">
+      <h3>檔案下載式</h3>
+      <p>新增連結至特定檔案之資料，點選前台條列標題後將連結、開啟(下載)檔案。</p>
+      </div>
+      </li>
+        </ul>
+        </td>
+    </tr>
+  </table>
+  <div class="aCenter">
+<div class="remark"><span class="must">*</span>星號標示項目為必填欄位</div>
+                <input name="submit1" type="button" class="btn_submit" onClick="location='quick-addData-step02.htm'" value="下一步" />
+                <input name="submit2" type="button" class="btn_reset"  value="取   消" />
+  </div>
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

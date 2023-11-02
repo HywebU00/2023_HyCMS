@@ -1,0 +1,41 @@
+﻿@charset "utf-8";
+/*--------------------stepA*/
+.stepA{
+	text-align:center;
+	width:1000px;
+	height:115px;
+	margin:10px auto 0px auto;
+	background: url(../images/step_bg.gif) no-repeat  center bottom;
+}
+.stepA ul{ margin:5px 0 0px 10px ; overflow:hidden; }
+.stepA ul li{ height:85px; width:230px;  padding:6px 0 0 0px; display:inline; float:left; }
+.stepA ul li span{
+	padding:0px 0 0 10px;
+	color:#999;
+	display:block;clear:both;
+	font: bold 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.stepA ul li p{ margin:5px 0 0 15px; width:150px;color:#999; font-size:1.2em; line-height:1.3em; }
+.stepA ul li.stepA1here span, .stepA ul li.stepA1here p,
+.stepA ul li.stepA2here span, .stepA ul li.stepA2here p,
+.stepA ul li.stepA3here span, .stepA ul li.stepA3here p,
+.stepA ul li.stepA4here span, .stepA ul li.stepA4here p{ color:#000;}
+.stepA ul li.stepA1, .stepA ul li.stepA2,.stepA ul li.stepA3{
+	background: url(../images/step1.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA1here, .stepA ul li.stepA2here, .stepA ul li.stepA3here{
+	background: url(../images/step1_here.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA4{
+	background: url(../images/step3.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA4here{
+	background: url(../images/step3_here.gif) no-repeat 0px 0px;
+}
+
+.ttitle{
+text-align:center;
+color:#BE0200;
+font: bold 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+padding-top:15px;
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+<body>
+<div class="popWin">
+<h2>從電腦中上傳圖片</h2>
+<div class="close"><a href="javascript:window.opener='x';window.close();"><img src="images/close.png"  alt="close"></a></div>
+
+
+<!--form-->
+<div class="popformTb"> 
+<form action="" method="get">
+
+<div class="setbox">
+<img src="images/buttle.gif" alt="&gt;">請由電腦中選擇檔案：
+<input name="selectfile" type="file" />
+<hr/>
+
+<table>
+<caption>圖片欄位設定</caption>
+<tr>
+<th><span class="must">*</span>圖片標題：</th>
+<td><input name="VTitle" type="text" size="50" /></td>
+</tr>
+<tr>
+<th>圖片簡介：</th>
+<td><textarea cols="50" name="TextArea1" rows="5"></textarea></td>
+</tr>
+<tr>
+<th><span class="must">*</span>隱私權：</th>
+<td>
+<input name="Radio4" type="radio" checked="checked" value="Public" />公開
+<input name="Radio4" type="radio" value="Private" />不公開
+</td>
+</tr>
+<tr>
+<th>排序：</th>
+<td>
+<input name="Text1" type="text" size="5" />
+</td>
+</tr>
+</table>
+
+</div>
+<div class="aCenter">
+  <input name="submit1" type="button" class="btn_submit" value="開始上傳" />
+  <input name="submit2" type="button" class="btn_reset"  value="放棄，關閉對話框" />
+      </div>
+</form> 
+<div class="foot"></div>    
+</div>
+
+</div>
+
+</body>
+</html>

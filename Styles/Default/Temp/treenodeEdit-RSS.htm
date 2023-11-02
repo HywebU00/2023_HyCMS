@@ -1,0 +1,185 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+</head>
+<body><!--treenode htm需將class="layout"拿掉 -->
+<div class="content">
+<h2><a href="#">目錄樹管理</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">目錄樹名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">子目錄名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>節點名稱</span></h2>
+
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="#"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>	
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb"> 
+<form action="" method="get">
+<div class="tab">
+<ul>
+    <li><a href="treenodeEdit.htm">基本資料管理</a></li>
+	<li><a href="treenodeEdit-table.htm">欄位進階設定</a></li>
+	<li><a href="#">政府資訊分類管理</a></li>
+    <li class="here"><a href="treenodeEdit-RSS.htm">RSS欄位設定管理</a></li>
+</ul>
+</div>      
+<Table>
+<tr>
+<th>頻道 Channel  設定</th>
+<td><input name="Checkbox1" type="checkbox" checked="checked" value="">使用目錄樹預設值
+</td>
+</tr>
+
+<tr>
+<th><span class="Must">*</span>標題 Title</th>
+<td><input name="d.title" class="textReadonly" value="預設帶入目錄樹標題" readonly />
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th><span class="Must">*</span>網址 link</Th>
+<td><input name="" class="text"/ value="http://www.taiwan.gov.tw">
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>語言 language</Th>
+<td><select name="" id="displayfilter">
+<option value="">請選擇</option>
+<option value="" selected="selected">中文</option>
+<option value="">英文</option>
+<option value="">日文</option>
+</select>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>版權 copyright</Th>
+<td><input name="" class="text" value="&copy; 2012 Copyright by Hyweb Technology Co. Inc."/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>管理者 managingEditor</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>網站管理者 webMaster</Th>
+<td><input name="" class="textReadonly" value="預設帶入建置建置日期" readonly/></td>
+</tr>
+
+<tr>
+<Th>發布日期 pubDate</Th>
+<td>
+<select name="" id="displayfilter">
+<option value="">請選擇</option>
+<option value="" selected="selected">文字 Text</option>
+<option value="">影像 Image</option>
+<option value="">音檔 Sound</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<Th>最後更新日期 lastBuildDate</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>類別 category</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>創建者 generator</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>RSS 網址 docs</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></td>
+</tr>
+
+<tr>
+<Th>項目 item設定</Th>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<Th>標題 title</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>網址 link</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>描述 description</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>發布日期 pubDate</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" />
+</td>
+</tr>
+
+<tr>
+<Th>識別ID guid</Th>
+<td><input name="" class="text"/>
+<img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" /></td>
+</tr>
+
+</Table>           
+
+<div class="aCenter">
+<div class="remark"><span class="must">*</span>必填欄位</div>
+<input name="submit1" type="button" class="btn_submit" onClick="location='treenodeList.htm'"  value="編修存檔" />
+<input name="submit2" type="button" class="btn_reset"  value="取    消" />
+      </div>
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

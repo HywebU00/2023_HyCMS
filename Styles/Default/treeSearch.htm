@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="layout">
+<div class="content">
+<h2>目錄樹查詢</h2>
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="javascript:history.back(1)"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb"> 
+<form action="" method="get">       
+<table summary="資料表格">
+              <caption></caption>
+              <tr>
+                <th scope="row">目錄樹名稱</th>
+                <td>
+                <label>
+                  <input name="textfield" type="text" id="textfield" class="text" value="請輸入查詢關鍵字">
+                </label>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">單位</th>
+                <td>
+                <label>
+                <select name="htx_deptId" size=1>
+                  <option value="">--- 共 用 ---</option>
+                  <OPTION VALUE=0>Government Information Office, EY</OPTION>
+                  <OPTION VALUE=01>├Office of the President</OPTION>
+                  <OPTION VALUE=011>│├Academia Sinica</OPTION>
+                  <OPTION VALUE=012>│└Academia Historica</OPTION>
+                  <OPTION VALUE=02>├行政院 The Executive Yuan</OPTION>
+                  <OPTION VALUE=029>│├蒙藏委員會 Mongolian and Tibetan Affairs Commission</OPTION>
+                  <OPTION VALUE=02A>│├僑務委員會 Oversea Compatriot Affairs Commission</OPTION>
+                  <OPTION VALUE=02B>│├行政院主計處 Directorate-General of Budget, Accounting, and Statistics</OPTION>
+                  <OPTION VALUE=02C>│├行政院人事行政局 Central Personnel Administration, EY</OPTION>
+                  <OPTION VALUE=02D>│├行政院衛生署 Department of Health, EY</OPTION>
+                  <OPTION VALUE=02E>│├行政院經濟建設委員會 Council for Economic Planning and Development, EY</OPTION>
+                  <OPTION VALUE=02F>│├行政院文化建設委員會 Council for Cultural Affairs, Exective Yuan</OPTION>
+                  <OPTION VALUE=021>│├內政部 Ministry of the Interior</OPTION>
+                  <OPTION VALUE=022>│├外交部 Ministry of Foreign Affairs</OPTION>
+                  <OPTION VALUE=023>│├國防部 Ministry of National Defense R.O.C</OPTION>
+                  <OPTION VALUE=024>│├財政部 Ministry of Finance</OPTION>
+                  <OPTION VALUE=025>│├教育部 Ministry of Education</OPTION>
+                  <OPTION VALUE=026>│├法務部 Ministry of Justice</OPTION>
+                  <OPTION VALUE=027>│├經濟部 Ministry of Economic Affairs</OPTION>
+                  <OPTION VALUE=028>│└交通部 Ministry of Transportation and Communications</OPTION>
+                  <OPTION VALUE=0281>│　└交通部觀光局 Tourism Bureau</OPTION>
+                  <OPTION VALUE=03>└地方機關 Local Government</OPTION>
+                  <OPTION VALUE=031>　├Taipei County Government</OPTION>
+                  <OPTION VALUE=032>　├Taipei City Government</OPTION>
+                  <OPTION VALUE=033>　├Taoyuan County Government</OPTION>
+                  <OPTION VALUE=034>　├Hsinchu County Government</OPTION>
+                  <OPTION VALUE=035>　├Hsinchu City Government</OPTION>
+                  <OPTION VALUE=036>　├Miaoli County Government</OPTION>
+                  <OPTION VALUE=038>　├Taichung County Government</OPTION>
+                  <OPTION VALUE=039>　├Taichung City  Government</OPTION>
+                  <OPTION VALUE=03A>　├Changhua County  Government</OPTION>
+                  <OPTION VALUE=03B>　├Nantou County Government</OPTION>
+                  <OPTION VALUE=03C>　├Yunlin County Government</OPTION>
+                  <OPTION VALUE=03D>　├Chiayi County Government</OPTION>
+                  <OPTION VALUE=03E>　├Chiayi City Government</OPTION>
+                  <OPTION VALUE=03F>　├Tainan County  Government</OPTION>
+                  <OPTION VALUE=03G>　├Tainan City  Government</OPTION>
+                  <OPTION VALUE=03H>　├Keelung City Government</OPTION>
+                  <OPTION VALUE=03I>　├Kaohsiung County  Government</OPTION>
+                  <OPTION VALUE=03J>　├Kaohsiung City Government</OPTION>
+                  <OPTION VALUE=03K>　├Pingtung County  Government</OPTION>
+                  <OPTION VALUE=03L>　├Yilan County  Government</OPTION>
+                  <OPTION VALUE=03M>　├Hualien County Government</OPTION>
+                  <OPTION VALUE=03N>　├Taitung County  Government</OPTION>
+                  <OPTION VALUE=03O>　├Penghu County  Government</OPTION>
+                  <OPTION VALUE=03P>　├Kinmen County Government</OPTION>
+                  <OPTION VALUE=03Q>　└Lienchiang County Government</OPTION>
+                </select>
+                </label>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">建立日期</th>
+                <td>
+                <label>
+				<input name="" size="25" value="2011/06/17 23:59"/> <img src="images/icon_calendar.gif" />
+				 ~ 
+				<input name="" size="25" value="2011/06/18 23:59"/> <img src="images/icon_calendar.gif" />
+                </label>
+                </td>
+              </tr>
+              </table>           
+
+<div class="aCenter">
+                <input name="submit1" type="button" class="btn_submit" onClick="location='treeList.htm'"  value="送出查詢" />&nbsp; 
+                <input name="submit2" type="button" class="btn_reset"  value="重   設" />
+</div>
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

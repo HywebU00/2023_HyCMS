@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+</head>
+<body class="layout">
+<div class="content">
+<h2><a href="#">目錄樹管理</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>目錄樹編修</span></h2>
+
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="treenodeMain.htm"><img src="images/icon_treeEdit.gif" alt="編修目錄樹架構">編修目錄樹架構</a></li>
+   <li><a href="treeList.htm"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>		
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="formTb"> 
+<form action="" method="get">
+<div class="tab">
+<ul>
+    <li><a href="TreeEdit.htm">基本資料管理</a></li>
+	<li class="here"><a href="treeEdit-GC.htm">政府資訊分類管理</a></li>
+	<li><a href="treeEdit-RSS.htm">RSS Feed管理</a></li>
+</ul>
+</div>
+<table summary="資料表格">
+  <caption>
+  </caption>
+  <tr>
+    <th scope="row"><span class="must">*</span>主題分類</th>
+    <td>
+	   <ul class="GClist">
+		<li><a href="#">(100)內政及國土 &gt;&gt; (110)民政
+		<img src="images/icon_remove.gif" alt="移除" title="移除" /></a>
+		</li>
+		<li>
+		<a href="#">
+		(100)內政及國土 &gt;&gt; (110)民政
+		<img src="images/icon_remove.gif" alt="移除" /></a>
+		</li>
+		<li>
+		<a href="#">
+		(100)內政及國土 &gt;&gt; (110)民政
+		<img src="images/icon_remove.gif" alt="移除" /></a>
+		</li>
+		<li>
+		<a href="#">
+		(100)內政及國土 &gt;&gt; (110)民政
+		<img src="images/icon_remove.gif" alt="移除" /></a>
+		</li>
+	   </ul>
+	   <a href="#"><img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" onClick="MM_openBrWindow('treeEdit-GCselect.htm','','location=yes,status=yes,scrollbars=yes,width=650,height=500')" /></a>
+    </td>
+  </tr>
+  <tr>
+    <th scope="row"><span class="must">*</span>施政分類</th>
+    <td><a href="#"><img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" onClick="MM_openBrWindow('treeEdit-GCselect.htm','','location=yes,status=yes,scrollbars=yes,width=650,height=500')" /></a></td>
+  </tr>
+  <tr>
+    <th scope="row"><span class="must">*</span>服務分類</th>
+    <td><a href="#"><img src="images/icon_editSelect.gif" alt="修改預設帶入欄位" onClick="MM_openBrWindow('treeEdit-GCselect.htm','','location=yes,status=yes,scrollbars=yes,width=650,height=500')" /></a></td>
+  </tr>
+</table>
+<div class="aCenter">
+        <div class="remark"><span class="must">*</span>星號標示項目為必填欄位</div>
+                <input name="submit1" type="button" class="btn_submit" onClick="location='treeList.htm'"  value="編修存檔" />
+                <input name="submit2" type="button" class="btn_reset"  value="取    消" />
+      </div>
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

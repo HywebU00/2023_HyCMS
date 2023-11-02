@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*---------------leftCol open*/
+.leftCol{
+	padding:0px 0px;
+	width:340px;
+	height:700px;
+    float: left;
+	position:relative;
+	background:#fff url(../images/leftCol_bg.gif) repeat 0px 0px;
+}
+.leftCol h2{
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+	color:#555;
+	height:35px;
+	margin:0 2px 0;
+	padding:5px 0 0 ;
+	background: url(../images/leftCol_h2bg.gif) repeat-x 0px 0px;
+}
+.leftCol .sideBar{
+	width:27px;
+	right:0px;
+	top:200px;
+	position: absolute;
+}
+.leftCol .sideBar .hide{
+    top:70px;
+	padding: 10px 0 0 10px;
+	position: relative;
+}
+.leftCol .sideBar .show{
+    top:20px;
+    padding: 10px 0 0 0;
+	position: relative;
+}
+.leftCol .treeBox{
+	float:left;
+	margin:20px 0 0 10px;
+	padding:0 0 0 4px;
+	width:300px;	
+} 
+/*---------------leftCol open*/
+.leftCol2{
+	padding:0px 0px;
+	width:27px;
+	height:520px;
+	position:relative;
+	background:#fff url(../images/leftCol_bg.gif) repeat 0px 0px;
+}
+.leftCol2 h2{height:35px;}
+.leftCol2 .sideBar{
+	width:27px;
+	right:0px;
+	top:200px;
+	position: absolute;
+}
+
+.leftCol3{
+	padding:0px 0px;
+	width:500px;
+	height:700px;
+    float: left;
+	position:relative;
+	background:#fff url(../images/leftCol3_bg.gif) repeat 0px 0px;
+}
+.leftCol3 h2{
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+	color:#555;
+	height:35px;
+	margin:0 2px 0;
+	padding:5px 0 0 ;
+	background: url(../images/leftCol_h2bg.gif) repeat-x 0px 0px;
+}
+.leftCol3 .sideBar{
+	width:27px;
+	right:0px;
+	top:200px;
+	position: absolute;
+}
+.leftCol3 .sideBar .hide{
+    top:70px;
+	padding: 10px 0 0 10px;
+	position: relative;
+}
+.leftCol3 .sideBar .show{
+    top:20px;
+    padding: 10px 0 0 0;
+	position: relative;
+}
+.leftCol3 .treeBox{
+	float:left;
+	margin:20px 0 0 10px;
+	padding:0 0 0 4px;
+	width:450px;	
+} 
+.leftCol3 .tree {
+	padding:10px 5px;
+	margin:0;
+	background: #fff url(../images/treeBox_bg.gif) repeat-x 0px top;
+    width:450px;
+    /* height:600px; */
+}

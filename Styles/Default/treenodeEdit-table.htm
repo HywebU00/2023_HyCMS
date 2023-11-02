@@ -1,0 +1,413 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HyCMS 網站內容管理系統</title>
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<script language=JavaScript>
+var number=1; //定義數目
+function LMYC() {
+var lbmc;
+    for (i=2;i<=number;i++) {
+        lbmc = eval('LM' + i);
+        lbmc.style.display = 'none';
+    }
+}
+ 
+function ShowFLT(i) {
+    lbmc = eval('LM' + i);
+    if (lbmc.style.display == 'none') {
+        LMYC();
+        lbmc.style.display = '';
+    }
+    else {
+        lbmc.style.display = 'none';
+    }
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+</head>
+<body><!--treenode htm需將class="layout"拿掉 -->
+<div class="content">
+<h2><a href="#">目錄樹管理</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">目錄樹名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><a href="#">子目錄名稱</a><img src="images/path_arrow.gif" alt="&gt;&gt;"><span>節點名稱</span></h2>
+
+
+<!-- navfunction -->
+<div class="navfunction">
+<div class="treeSet">
+ <ul>
+   <li><a href="#"><img src="images/icon_back.gif" alt="返回前頁">返回前頁</a></li>	
+ </ul>
+ </div>
+<div class="fontsize">
+字級大小:
+<ul>
+   <li><a href="#"><img src="images/zoomOut.gif" alt="縮小字級" /></a></li>
+   <li><a href="#"><img src="images/zoomIn.gif" alt="放大字級" /></a></li>
+ </ul>
+</div>
+</div>
+
+<!--form-->
+<div class="listTb"> 
+<form action="" method="get">
+<div class="tab">
+<ul>
+    <li><a href="treenodeEdit.htm">基本資料管理</a></li>
+	<li class="here"><a href="treenodeEdit-table.htm">欄位進階設定</a></li>
+	<li><a href="#">政府資訊分類管理</a></li>
+    <li><a href="#">RSS欄位設定管理</a></li>
+</ul>
+</div>      
+<Table>
+  <tr>
+	<th width="100" rowspan="3" nowrap>排序</th>
+	<th width="100" rowspan="3" nowrap>欄位原有名稱</th>	
+	<th width="150" rowspan="3" nowrap>欄位顯示名稱</th>
+	<th width="150" rowspan="3">進階欄位</th>
+	<th colspan="3">前台顯示設定</th>
+	<th colspan="5">後台顯示設定&nbsp;
+	</th>
+  </tr>
+
+
+  <tr>
+	<th rowspan="2">條列</th>
+	<th rowspan="2">內容</th>
+	<th rowspan="2">查詢</th>
+	<th rowspan="2">條列</th>
+	<th colspan="3">內容
+		<!--select name="Select1">
+		<option>請選擇</option>
+		<option selected="selected">一般資料式</option>
+		<option>檔案下載式</option>
+		<option>URL連結式</option>
+		</select-->
+	</th>
+	<th rowspan="2">查詢</th>
+  </tr>
+
+
+  <tr>
+	<th>一般</th>
+	<th>連結</th>
+	<th>下載</th>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="00">
+	<img src="images/arrow_down.gif" alt="下移" /></td>
+	<td>標題</td>
+	<td><input type=text Name="" value="標題"></td>
+	<TD><div class="optional"><!--FF瀏覽器 展開下層效果出不來,需要工程師再調整一下 -->
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div>     
+        </td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+	<TD class="aCenter"><input type=checkbox name="" checked="checked" readonly /></td>
+  </tr>
+  <tr id=LM1 style="display:none; background-color:#fbfae9;" >
+    <TD colspan="3">&nbsp;</td>
+    <TD colspan="9">
+    <div class="setbox" >
+
+		<p>【範本欄位資訊】資料類型：varchar；資料長度：100</p>
+		<div>
+		輸入模式：
+		<select name="Select1" readonly>
+				<option>請選擇</option>
+				<option selected="selected">文字 Text</option>
+				<option>文字區塊 Textarea</option>
+				<option>複選模式 checkbox</option>
+				<option>單選模式 radio</option>
+				<option>下拉選單 select</option>
+				<option>上傳檔案 file</option>
+				<option>日期時間 smalldatetime</option>
+		</select>
+		欄位長度：
+		<input name="Text1" value="" type="text" size="15" />
+		</div>
+
+		<div>
+		參照代碼：
+		<select name="Select1">
+		<option value="">請選擇代碼類別</option>
+		<OPTION VALUE=01>├第一層代碼分類名稱</OPTION>
+		<OPTION VALUE=011>│├代碼名稱</OPTION>
+		<OPTION VALUE=012>│└代碼名稱</OPTION>
+		<OPTION VALUE=01>├第一層代碼分類名稱</OPTION>
+		<OPTION VALUE=011>│├代碼名稱</OPTION>
+		<OPTION VALUE=02B>│├行政院主計處 Directorate-General of Budget, Accounting, and Statistics</OPTION>
+		<OPTION VALUE=02C>│├行政院人事行政局 Central Personnel Administration, EY</OPTION>
+		<OPTION VALUE=012>│└代碼名稱</OPTION>
+		</select>
+		<!--input name="Text1" value="請輸入代碼值或點選右方按鈕來選擇代碼" type="text" size="25" /-->
+		<a href="#" onClick="MM_openBrWindow('treenodeEdit-tableadv.htm','','location=yes,width=650,height=600')"><img src="images/icon_codeDetail.gif" alt="管理代碼值" /></a>
+		</div>
+
+		<div>
+		欄位描述：
+		<input name="Text1" value="" type="text" size="65" />
+		</div>
+		
+		</div>
+    </td>
+    </tr>
+
+  <tr>
+    <TD><input type=text Name="" size="3" maxlength=3 value="05">
+      <img src="images/arrow_down.gif" alt="下移" />
+      <img src="images/arrow_up.gif" alt="上移" />
+      </td>
+    <td>檔案下載</td>
+    <td><input type=text Name="" value="檔案下載"></td>
+    <TD><div class="optional"><!--FF瀏覽器 展開下層效果出不來,需要工程師再調整一下 -->
+      <a onClick=javascript:ShowFLT(2) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+    <TD class="aCenter"><input type=checkbox name="" /></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+    <TD class="aCenter"><input type=checkbox name="" /></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+    <TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+<tr id=LM2 style="display:none; background-color:#fbfae9;" >
+    <TD colspan="3">&nbsp;</td>
+    <TD colspan="9">
+    <div class="setbox">
+
+		<p>【範本欄位資訊】資料類型：nvarchar；資料長度：500</p>
+		<div>
+		輸入模式：
+		<select name="Select1">
+				<option>請選擇</option>
+				<option>文字 Text</option>
+				<option>文字區塊 Textarea</option>
+				<option>複選模式 checkbox</option>
+				<option>單選模式 radio</option>
+				<option>下拉選單 select</option>
+				<option selected="selected">上傳檔案 file</option>
+				<option>日期時間 smalldatetime</option>
+		</select>
+		欄位長度：
+		<input name="Text1" value="" type="text" size="15" />
+		</div>
+
+		<div>
+		參照代碼：
+		<select name="Select1">
+		<option value="">請選擇代碼類別</option>
+		<OPTION VALUE=01>├第一層代碼分類名稱</OPTION>
+		<OPTION VALUE=011>│├代碼名稱</OPTION>
+		<OPTION VALUE=012>│└代碼名稱</OPTION>
+		<OPTION VALUE=01>├第一層代碼分類名稱</OPTION>
+		<OPTION VALUE=011>│├代碼名稱</OPTION>
+		<OPTION VALUE=02B>│├行政院主計處 Directorate-General of Budget, Accounting, and Statistics</OPTION>
+		<OPTION VALUE=02C>│├行政院人事行政局 Central Personnel Administration, EY</OPTION>
+		<OPTION VALUE=012>│└代碼名稱</OPTION>
+		</select>
+		<a href="#" onClick="MM_openBrWindow('treenodeEdit-tableadv-temp.htm','','location=yes,width=650,height=600')"><img src="images/icon_codeDetail.gif" alt="管理代碼值" /></a>
+		</div>
+
+		<div>
+		欄位描述：
+		<input name="Text1" value="" type="text" size="65" />
+		</div>
+		
+		</div>
+    </td>
+    </tr>
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="20">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>內文</td>
+	<td><input type=text Name="" value="內文"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="30">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>資料大類</td>
+	<td><input type=text Name="" value="資料大類"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_down.gif" alt="下移" />
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+  <tr>
+	<TD><input type=text Name="" size="3" maxlength=3 value="10">
+	<img src="images/arrow_up.gif" alt="上移" />
+	</td>
+	<td>網址</td>
+	<td><input type=text Name="" value="網址"></td>
+	<td><div class="optional">
+        <a onClick=javascript:ShowFLT(1) href="javascript:void(null)" target="_self">欄位進階設定</a></div></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name="" /></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+	<TD class="aCenter"><input type=checkbox name=""></td>
+  </tr>
+
+</Table>           
+
+<div class="aCenter">
+<div class="remark"><span class="must">*</span>必填欄位</div>
+<input name="submit1" type="button" class="btn_submit" onClick="location='treenodeMain.htm'"  value="編修存檔" />
+<input name="submit2" type="button" class="btn_reset"  value="取    消" />
+      </div>
+</form>     
+</div>
+
+<!--copyright 共用區-->	
+<div class="copyright">Hyweb Government Information Potal    © 2012 Copyright by Hyweb Technology Co. Inc. All right reserved.</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	padding:0;
+	/* margin:5px 5px 0px 0px; */
+    margin:0;
+	position:relative;
+	/* height:100%; */
+	font-size:1.0em;
+	*position:relative;
+	scrollbar-face-color: #999;
+	scrollbar-highlight-color: #eee;
+	scrollbar-shadow-color: #eee;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-arrow-color: #777;
+	scrollbar-track-color: #eaeadd;
+	scrollbar-darkshadow-color: #eee
+}
+
+.tree {
+	padding:10px 5px;
+	margin:0;
+	background: #fff url(../images/treeBox_bg.gif) repeat-x 0px top;
+    width:300px;
+    /* height:600px; */
+}
+
+img {
+	border:0;
+}
+.containerTableStyle a {
+	text-decoration:none;
+	color:#CC0000;
+}
+.containerTableStyle {
+	display:inline-block;
+	width:50%;
+	clear:both;
+}
+.containerTableStyle table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font-size: 13px;
+	font-family:"新細明體", Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	width:100%;
+/*	overflow:auto;*/
+}
+.containerTableStyle td {
+	padding:0;
+	margin:0;
+}
+.containerTableStyle .alignCenter td {
+	padding:0;
+	height:21px;
+}
+
+.mainTreeTable {
+	width:100%;
+}
+.mainTreeTable td {
+	vertical-align:top;
+}
+.standartTreeImage {
+	width:18px;
+	height:21px;
+	vertical-align:middle;
+	text-align:left;
+	padding:0;
+}
+.standartTreeImage img {
+	border:0;
+	margin:0;
+}
+
+.standartTreeRow {
+	cursor: pointer;
+}
+.selectedTreeRow {
+	color:#FFF;
+	background-color:#CC0000;
+}
+
+td.alignCenter {
+	text-align:center;
+	vertical-align:top;
+	height:20px;
+}
+td.alignCenter table {
+	width:100%;
+}
+
+
+.rightbox {
+	display:inline-block;
+	vertical-align:top;
+	margin-left:20px;
+	padding: 5px 10px 15px;
+	border:1px solid #CCC;
+	width:45%;
+	background:#FFF;
+}
+.rightbox td {
+}
+.rightbox h4 {
+	font-weight:normal;
+	font-size:80%;
+	border-bottom:3px double #CCC;
+	color:maroon;
+	margin:10px 0;
+}
+.rightbox p {
+	width:95%;
+}

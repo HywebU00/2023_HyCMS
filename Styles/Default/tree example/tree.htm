@@ -1,0 +1,235 @@
+﻿<html>
+<head>
+<title> 組織架構 </title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link type="text/css" rel="stylesheet" href="left.css" />
+<link type="text/css" rel="stylesheet" href="treeview.css" />
+<link href="js/dhtmlxtree.css" type="text/css" rel="stylesheet" />
+<script src="js/dhtmlxcommon.js" language="javaScript">
+<script src="js/dhtmlxtree.js" language="javaScript">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript">
+
+<script language="javaScript">
+var tree = new dhtmlXTreeObject("tree", "100%", "100%", 0);
+tree.setXMLAutoLoading("DeptOrgTreeLoader.asmx/TreeLoader");
+tree.setImagePath("treeGfx/");
+tree.enableCheckBoxes(1);
+tree.loadXML("treeConfig_dhtml.xml");
+tree.attachEvent("onClick", function(current, previous) {
+var url = tree.getUserData(current, "url");
+if (url) {
+window.open(url, "ForumToc");
+}
+});
+tree.openItem("root");
+</script>
+
+
+
+</head>
+<body id="tree" style="margin: 10px 30px 0px 5px; overflow: hidden;">
+<div class="containerTableStyle" style="width: 100%; height: 100%;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px; overflow: hidden;">
+<tbody>
+<tr style="display: none;">
+</tr><tr style="">
+<td> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/minus5.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderOpen.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">目錄樹總管</span>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: none;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/minus2.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderOpen.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">凌網</span>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: none;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/minus2.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderOpen.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">資訊與服務綜合事業處</span>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: none;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/minus3.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderOpen.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">T1</span>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: url("treeGfx/line1.gif"); background-repeat: repeat-y;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/line3.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderClosed.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="selectedTreeRow" style="padding-left: 5px; padding-right: 5px;">T11</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: url("treeGfx/line1.gif"); background-repeat: repeat-y;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/plus2.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderClosed.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">T12</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: none;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/plus3.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderClosed.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">T2</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="">
+<td style="background-image: none;"> </td>
+<td colspan="3">
+<table cellspacing="0" cellpadding="0" border="0" style="margin: 0px; padding: 0px;">
+<tbody>
+<tr>
+<td class="standartTreeImage">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/plus2.gif" />
+</td>
+<td width="20px">
+<img align="absmiddle" src="treeGfx/iconUncheckAll.gif" style="width: 16px; height: 16px;" />
+</td>
+<td class="standartTreeImage" style="width: 18px;">
+<img border="0" align="absmiddle" style="padding: 0px; margin: 0px; width: 18px; height: 18px;" src="treeGfx/folderClosed.gif" />
+</td>
+<td class="standartTreeRow" nowrap="" style="width: 100%; cursor: pointer;">
+<span class="standartTreeRow" style="padding-left: 5px; padding-right: 5px;">T3</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="display:none">
+<img src="treeGfx/minus2.gif" />
+<img src="treeGfx/plus2.gif" />
+<img src="treeGfx/minus5.gif" />
+<img src="treeGfx/plus5.gif" />
+<img src="treeGfx/iconCheckAll.gif" />
+<img src="treeGfx/iconUncheckAll.gif" />
+<img src="treeGfx/folderClosed.gif" />
+<img src="treeGfx/folderOpen.gif" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* tree */
+
+/*-------------------------------------ul.tree*/
+ul.tree {
+    list-style:none;
+    margin:0;
+    padding:0;
+    color:#333;
+    font-size:0.8em;
+    line-height:18px;
+    width:95%;
+}
+ul.tree li {
+    margin:0;
+    padding:0;
+}
+ul.tree li a {
+    color:#333;
+    text-decoration:none;
+    padding:0 0 3px 24px;
+    padding-top:2px \9;
+    display:inline-block;
+}
+
+/*-------------------------------------*/
+ul.tree {
+    padding-left: 8px;
+}
+ul.tree ul {
+    padding: 0;
+    margin:0;
+    list-style:none;
+    margin-left: 21px;
+    margin-right:5px;
+    *margin-right:20px;
+}
+ul.tree ul ul {
+    margin-right:0;
+}
+
+/*-------------------------------------li 垂直線*/
+ul.tree li.closed ul {
+    display: none;
+}
+ul.tree li {
+    background:url(treeIcon_repeater.gif) 0 0 repeat-y;
+}
+ul.tree li li {
+    margin-right:0;
+}
+ul.tree li.last ,
+ul.tree li#root .a {
+    background-image:none;
+}
+
+/*-------------------------------------span.a: TL連接線*/
+ul.tree li#root li span.a {
+    background: url(treeIcon_T.gif) 0 0 no-repeat;
+    display: block;
+}
+ul.tree li#root li span.a.last {
+    background: url(treeIcon_L.gif) 0 0 no-repeat;
+}
+
+/*-------------------------------------.b: + -*/
+ul.tree span.b {
+    display: block;
+    *display: ;
+}
+ul.tree span.a.children span.b {
+    background:url(treeIcon_minus.gif) no-repeat 0 1px;
+    _background-image:url(treeIcon_minus.gif);
+    cursor: default;
+}
+ul.tree li.closed span.a.children span.b {
+    background:url(treeIcon_plus.gif) no-repeat 0 1px;
+    _background-image:url(treeIcon_plus.gif);
+    cursor: default;
+}
+
+/*-------------------------------------.c */
+/* 這個比較特殊 專門處裡 資料夾之間的連接線 還有空白的問題 */
+ul.tree span.c {
+    margin-left: 21px;
+    display:block;
+    *display:inline;
+}
+ul.tree span.a.children span.c {
+    background: url(i-bottom.gif) 0 0 no-repeat;
+}
+ul.tree span.a.spanClosed span.c {
+    background-image: none;
+}
+
+
+/*------------------------------------- file , folder (close/open) */
+ul.tree a  {/*沒有次選項，顯示「檔案圖示」*/
+    background:url(treeIcon_file.gif) 0 0 no-repeat;
+    _background-image:url(treeIcon_file.gif);
+}
+/*-------------------------------------有次選項，顯示「資料夾圖示」*/
+ul.tree span.a.children a {/*次選項是展開狀態，打開的*/
+    background-image: url(treeIcon_folderOpen.gif);
+    _background-image: url(treeIcon_folderOpen.gif);
+    /*width: 200%;changed*/
+}
+ul.tree span.a.children.spanClosed a {/*次選項是收合狀態，關閉的「資料夾圖示」*/
+    background-image: url(treeIcon_folderClose.gif);
+    _background-image: url(treeIcon_folderClose.gif);
+    /*width: 200%;changed*/
+}
+
+
+
+ul.tree li A:link, ul.tree li A:hover, ul.tree li A:visited {
+    color : #fff;
+}
+
+ul.tree.drag{
+    background-color: #FFFF09;
+    display: block;
+    width:auto;
+    position: absolute;
+    filter: alpha(opacity=70);
+    visibility:hidden;
+}
+
+/*拖拉結束後的選單*/
+.menu{
+    visibility:hidden;
+    position: absolute;
+}
+.menuitem{
+    cursor:hand;
+    font-size: 12px;
+}

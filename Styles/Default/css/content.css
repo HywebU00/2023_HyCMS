@@ -1,0 +1,192 @@
+﻿@charset "utf-8";
+
+
+.layout {
+	background: url(../images/mainbg.jpg) no-repeat fixed 0px top;
+	background-color: white;
+	margin: 0 0 40px 0;
+}
+
+.layoutFrame{
+	background: url(../images/framebg.jpg) no-repeat fixed 0px top;
+}
+
+/*---------------content*/
+.content{ margin:20px;  }
+.contRight{ overflow:hidden; padding:0 0px 0 0px;}
+
+.contentNode{font-size:1em;}
+
+.content h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #006666;
+	padding: 5px 0 5px 20px;
+	background: url(../images/h2bg.png) no-repeat 0px 0px;
+	margin-bottom: 5px;
+}
+.content h2 a{color:#006666;font-weight:bold;}
+.content h2 span{ color:#333;}
+
+.popWin h2{
+	font-size:1.2em;
+	font-weight:bold;
+	margin:0 0 0 0px;
+	color: #006666;
+	padding:10px 0 25px 55px;
+	background: url(../images/popWin_h2bg.jpg) no-repeat 0px bottom;
+}
+
+/*---------------navfunction*/
+.navfunction{ float:right; margin:-22px 0 5px; padding:0; clear: both; }
+.navfunction .treeSet{ float:left;}
+.navfunction .treeSet ul{ margin:0 5px 0 0; }
+.navfunction .treeSet ul li{ display: inline; float:left; margin:0 2px 0; padding:0 }
+.navfunction .treeSet ul li a{ color:#999; }
+.navfunction .treeSet ul li a:hover, .navfunction .treeSet ul li.here a{color:#C30;	}
+
+.navfunction .fontsize{float:left; width:115px;  }
+.navfunction .fontsize ul{
+	float: left;
+	margin:	0px 0 0 60px;
+	margin:-20px 0 0 60px\9;
+
+}
+body:nth-of-type(1) .navfunction .fontsize ul{margin:-20px 0 0 60px;	}
+
+.navfunction .fontsize li{ display:inline; float:left; }
+.navfunction li img{ vertical-align:middle; margin:0 2px 0;}
+
+/*--------------listfunction*/
+.listfunction{clear:both; margin:5px 0 0 0; width:100%; }
+.listfunction p{clear:both;}
+.listfunction label{ margin:0; color:#006666;}
+.listfunction .sortBy{  color:#666;position:relative;  float:left; margin:0; padding:0; }
+.listfunction .sortBy .blockModify{
+	border:1px solid #4dc0b1;
+	border-bottom:0;
+	background-color:#edfffd;
+	width:85px;
+	position: absolute;
+	top:24px;
+	left:0px;
+	padding:0px;
+}
+.listfunction .sortBy .blockModify li{ border-bottom:1px solid #4dc0b1;  margin:0 ; }
+.listfunction .sortBy .blockModify a{ color:#333;  font-size:0.9em; line-height:2em;display:block;  padding:0 0 0 12px; }
+.listfunction .sortBy .blockModify a:hover{ color:#C00; background-color:#4dc0b1;}
+.listfunction .btnBatch{
+	color:#333;
+	width:90px;
+	margin:0;
+	/* padding:5px 0 3px 0; */
+	padding: 3px 0 3px 10px;
+	cursor:pointer;
+	border:0;
+	background: url(../images/btnBatch_bg.gif) repeat-x 0px 0px;
+}
+.treenodeBox{ margin:40px auto 20px auto;width:750px; }
+/*---------------------explain*/
+.explain{  margin:20px auto; border-bottom:1px dotted #CCC; font-size:1.2em; color:#003f41; clear:both; }
+
+.nodeItem {  margin:0 auto ;  }
+.nodeItem ul{
+	margin:10px auto 0 auto;
+	clear:both;
+	width:90%;
+	text-align:center;
+}
+.nodeItem li{ display:inline; padding:10px;  margin:0 auto; width:750px;   }
+
+/*--------------------step*/
+.step{
+	text-align:center;
+	width:700px;
+	height:115px;
+	margin:10px auto 0px auto;
+	background: url(../images/step_bg.gif) no-repeat  center bottom;
+}
+.step ul{ margin:5px 0 0px 10px ; overflow:hidden; }
+.step ul li{ height:85px; width:230px;  padding:6px 0 0 0px; display:inline; float:left; }
+.step ul li span{
+	padding:0px 0 0 10px;
+	color:#999;
+	display:block;clear:both;
+	font: bold 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.step ul li p{ margin:5px 0 0 15px; width:150px;color:#999; font-size:1.0em; line-height:1.3em; }
+.step ul li.step1here span, .step ul li.step1here p,
+.step ul li.step2here span, .step ul li.step2here p,
+.step ul li.step3here span, .step ul li.step3here p{ color:#000;}
+.step ul li.step1, .step ul li.step2{
+	background: url(../images/step1.gif) no-repeat 0px 0px;
+}
+.step ul li.step1here, .step ul li.step2here{
+	background: url(../images/step1_here.gif) no-repeat 0px 0px;
+}
+.step ul li.step3{
+	background: url(../images/step3.gif) no-repeat 0px 0px;
+}
+.step ul li.step3here{
+	background: url(../images/step3_here.gif) no-repeat 0px 0px;
+}
+
+/*-------------------mode_L*/
+.mode_L { margin:0 auto;}
+.mode_L li{ display:inline; float:left; position:relative; width:230px; margin:0 10px 0;}
+.mode_L li .data{ position:absolute; top:15px; left:20px;}
+.mode_L li .data h3{ font-size:1.2em; font-weight:bold; color:#444;}
+.mode_L li .data p{ font-size:0.8em; color:#999; width:135px; line-height:1.4em; overflow:auto; height:60px;  }
+
+/*-------------------mode_s*/
+.mode_s { margin:6px;}
+.mode_s li{ display:inline; float:left;  position:relative;}
+.mode_s li span{ position:absolute; top:1px; left:5px; color:#888; overflow:hidden; font-size: 1em; }
+.mode_s li.here span{ color:#000; }
+
+
+/*--------------------stepA*/
+.stepA{
+	text-align:center;
+	width:1000px;
+	height:115px;
+	margin:10px auto 0px auto;
+	background: url(../images/step_bg.gif) no-repeat  center bottom;
+}
+.stepA ul{ margin:5px 0 0px 10px ; overflow:hidden; }
+.stepA ul li{ height:85px; width:230px;  padding:6px 0 0 0px; display:inline; float:left; }
+.stepA ul li span{
+	padding:0px 0 0 10px;
+	color:#999;
+	display:block;clear:both;
+	font: bold 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.stepA ul li p{ margin:5px 0 0 15px; width:150px;color:#999; font-size:1.2em; line-height:1.3em; }
+.stepA ul li.stepA1here span, .stepA ul li.stepA1here p,
+.stepA ul li.stepA2here span, .stepA ul li.stepA2here p,
+.stepA ul li.stepA3here span, .stepA ul li.stepA3here p,
+.stepA ul li.stepA4here span, .stepA ul li.stepA4here p{ color:#000;}
+.stepA ul li.stepA1, .stepA ul li.stepA2,.stepA ul li.stepA3{
+	background: url(../images/step1.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA1here, .stepA ul li.stepA2here, .stepA ul li.stepA3here{
+	background: url(../images/step1_here.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA4{
+	background: url(../images/step3.gif) no-repeat 0px 0px;
+}
+.stepA ul li.stepA4here{
+	background: url(../images/step3_here.gif) no-repeat 0px 0px;
+}
+
+.ttitle {
+	text-align: center;
+	color: #BE0200;
+	font: bold 1.3em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 15px;
+}
+
+/*--------------layoutborder------*/
+.layoutborder{  float:left; padding:5px 10px 5px 10PX; }
+.layoutborder table{ margin:10px 0 20px 0;background-color:#FFF; border:2px solid #60563d; border-collapse:collapse;}
+.layoutborder table td{ border:1px solid #60563d; }
