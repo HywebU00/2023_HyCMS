@@ -9,7 +9,8 @@
 .top h1{position: absolute; top:5px; left:20px;}
 .top h1 img{ width: auto; height: 70px;}
 
-.top .toplink{position: absolute; top:10px; right:8px; color:#7b7962;}
+.top .toplink{position: absolute; top:10px; right:8px; color:#7b7962;z-index: 1;}
+.top .toplink a{cursor: pointer;}
 /*--------------topinfo*/
 .topinfo{  color:#999; float:left;   display:inline-block;}
 .topinfo .user{ font-weight:bold; color:#333;}
